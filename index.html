@@ -4,8 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emergency Hotline Project</title>
+    <!--CDN of TailWind and DaisyUI and Font Awesome-->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--typography-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
 </head>
-<body>
-    
+<body class="font-[Hind Madurai]">
+    <header>
+        <!--nav bar-->
+        <nav class="flex justify-between mx-[60px] py-[24px]">
+            <div class="flex items-center gap-2">
+                <img class="max-w-[50px]" src="assets/logo.png" alt="">
+                <h2 class="font-bold text-[#006747] leading-tight">Emergency <br> Service</h2>
+            </div>
+
+            <div class="flex items-center gap-[20px]">
+                <p class="inline-flex items-center space-x-2 py-[11px] px-[27px] bg-[#ECFDF0] rounded-4xl"><span class="font-bold">0</span><img class="max-w-[27px]" src="assets/heart.png" alt=""></p>
+
+                <p class="inline-flex items-center space-x-2 py-[12px] px-[20px] bg-[#ECFDF0] rounded-4xl"><span class="font-bold">100</span><img class="max-w-[24px]" src="assets/coin.png" alt=""></p>
+
+                <p class="text-white py-[12px] px-[25px] bg-[#50A740] rounded-4xl"><span class="pr-[5px] font-semibold">0</span>Copy</p>
+            </div>
+        </nav>
+
+        <!--banner title-->
+        <section class="flex flex-col justify-center items-center bg-gradient-to-r from-[#143525] via-[#2A6143] to-[#143525] text-white py-[20px]">
+            <img class="max-w-[92px]" src="assets/logo-dark.png" alt="">
+            <h3 class="font-bold text-[40px] my-[11px]">Emergency Service Directory</h3>
+            <p class="text-[18px]">Government Emergency Services at Your Fingertip - A Project by  Government of the People's Republic of Bangladesh</p>
+        </section>
+    </header>
 </body>
 </html>
