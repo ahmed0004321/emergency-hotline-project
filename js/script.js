@@ -9,7 +9,8 @@ const heartIcon = document.getElementsByClassName("heart-icon");
 
 for (let heart of heartIcon){
     heart.addEventListener('click', 
-        function(){
+        function(e){
+            e.preventDefault();
             let heartCount = parseInt(getElement("heart-number").innerText);
             
             let counting = heartCount += 1;
@@ -23,7 +24,8 @@ const copyButton = document.getElementsByClassName("copy-btn");
 
 for (let copyBtn of copyButton){
     copyBtn.addEventListener('click', 
-        function(){
+        function(e){
+            e.preventDefault();
             let copyNumber = parseInt(getElement("copy-number").innerText);
 
             let copyCounting = copyNumber += 1;
@@ -41,8 +43,8 @@ const callButton = document.getElementsByClassName("call-btn");
 
 for (let callBtn of callButton){
     callBtn.addEventListener('click', 
-        function(){
-
+        function(e){
+            e.preventDefault();
             //access the name and number first
             const name = callBtn.parentNode.parentNode.children[1].children[0].innerText;
             const number = callBtn.parentNode.parentNode.children[1].children[2].innerText;
@@ -90,7 +92,8 @@ for (let callBtn of callButton){
 
 //for clear button
 document.getElementById("clear-btn").addEventListener('click', 
-    function(){
+    function(e){
+        e.preventDefault();
         const callHistory = getElement("history-box");
         callHistory.innerHTML = "";
     }
