@@ -32,6 +32,11 @@ for (let copyBtn of copyButton){
             getElement("copy-number").innerText = copyCounting;
 
             //copy system
+
+            const copyItem = copyBtn.parentNode.parentNode.children[1].children[2].innerText;
+
+            navigator.clipboard.writeText(copyItem);
+            alert("Copied: " + copyItem);
         }
     )
 }
@@ -49,7 +54,7 @@ for (let callBtn of callButton){
             const name = callBtn.parentNode.parentNode.children[1].children[0].innerText;
             const number = callBtn.parentNode.parentNode.children[1].children[2].innerText;
 
-            let time = new Date().toLocaleTimeString();
+            let time = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: true });
             
             
             //each call will cut 20 coins
@@ -62,7 +67,7 @@ for (let callBtn of callButton){
                 return;
             }
             else {
-                alert("calling "+name+" "+number);
+                alert("calling "+name+": "+number);
             }
             let coinDecrease = coin - callCost;
             getElement("coin").innerText = coinDecrease;
