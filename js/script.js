@@ -67,7 +67,7 @@ for (let callBtn of callButton){
                 return;
             }
             else {
-                alert("calling "+name+": "+number);
+                alert("calling "+name+" "+number+"...");
             }
             let coinDecrease = coin - callCost;
             getElement("coin").innerText = coinDecrease;
