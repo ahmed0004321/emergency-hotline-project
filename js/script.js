@@ -84,7 +84,7 @@ for (let callBtn of callButton){
                         <p class="text-[#979797]">${number}</p>
                     </div>
                     <div>
-                        <h3>${time}</h3>
+                        <h3 class="whitespace-nowrap">${time}</h3>
                     </div>
                 </div>
             `

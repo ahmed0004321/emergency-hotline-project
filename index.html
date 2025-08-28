@@ -14,10 +14,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 </head>
-<body class="bg-[#F4FEF6] min-h-screen">
+<body class="bg-[#F4FEF6] min-h-screen pb-[60px]">
     <header class="bg-white">
         <!--nav bar-->
-        <nav class="flex justify-between mx-[60px] py-[24px]">
+        <nav class="flex justify-between max-w-[1400px] mx-auto py-[24px] md:mx-[40px]">
             <div class="flex items-center gap-2">
                 <img class="max-w-[50px]" src="assets/logo.png" alt="">
                 <h2 class="font-bold text-[#006747] leading-tight text-[22px]">Emergency <br> Service</h2>
@@ -37,7 +37,7 @@
         <section class="flex flex-col justify-center items-center bg-gradient-to-r from-[#143525] via-[#2A6143] to-[#143525] text-white py-[20px]">
             <img class="max-w-[92px]" src="assets/logo-dark.png" alt="">
             <h3 class="font-bold text-[40px] my-[11px]">Emergency Service Directory</h3>
-            <p class="text-[18px]">Government Emergency Services at Your Fingertip - A Project by  Government of the People's Republic of Bangladesh</p>
+            <p class="text-[18px] md:text-center sm:text-center">Government Emergency Services at Your Fingertip - A Project by  Government of the People's Republic of Bangladesh</p>
         </section>
     </header>
 
@@ -45,7 +45,7 @@
         <!--card section-->
         <section id="all-container" class="w-11/12 max-w-[1800px] mx-auto mt-[45px] grid grid-cols-12 gap-[25px] pb-[70]">
 
-            <section id="cards-container" class="col-span-9 grid grid-cols-3 grid-rows-3 gap-6">
+            <section id="cards-container" class="lg:col-span-9 col-span-12 grid lg:grid-cols-3 grid-rows-3 gap-6">
                 <!--card 1-->
                 <div class="bg-white p-5 rounded-xl shadow-lg flex flex-col justify-between h-full">
                     <!--icon-->
@@ -335,7 +335,7 @@
             </section>
 
             <!--aside call history section-->
-            <aside class="bg-white h-full col-span-3  p-4 rounded-md">
+            <aside class="bg-white h-full lg:col-span-3 p-4 rounded-md md:min-h-[150px] col-span-12">
 
                 <div class="flex items-center justify-between p-5">
                 <h3 class="text-[15px]"><i class="fa-regular fa-clock pr-5 text-[#848484]"></i>Call History</h3>
