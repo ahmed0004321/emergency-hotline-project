@@ -80,11 +80,11 @@ for (let callBtn of callButton){
             newCall.innerHTML = `
             <div class="flex items-center justify-between shadow-sm bg-[#FAFAFA] p-4 rounded-xl mb-[10px]">
                     <div>
-                        <h3 class="text-[20px]">${name}</h3>
+                        <h3 class="text-[17px] font-[500]">${name}</h3>
                         <p class="text-[#979797]">${number}</p>
                     </div>
                     <div>
-                        <h3 class="whitespace-nowrap">${time}</h3>
+                        <h3 class="whitespace-nowrap text-[14px]">${time}</h3>
                     </div>
                 </div>
             `
