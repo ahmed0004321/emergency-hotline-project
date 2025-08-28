@@ -63,7 +63,7 @@ for (let callBtn of callButton){
             const coin = parseInt(getElement("coin").innerText);
 
             if(coin < 20){
-                alert("Warning!!!.. Need More Coins for Call");
+                alert("Warning!!!.. Insufficient Coins...");
                 return;
             }
             else {
@@ -78,9 +78,9 @@ for (let callBtn of callButton){
 
             const newCall = document.createElement("div");
             newCall.innerHTML = `
-            <div class="flex items-center justify-between shadow-lg bg-[#FAFAFA] p-4 rounded-xl mb-[10px]">
+            <div class="flex items-center justify-between shadow-sm bg-[#FAFAFA] p-4 rounded-xl mb-[10px]">
                     <div>
-                        <h3 class="font-bold text-xl">${name}</h3>
+                        <h3 class="text-[20px]">${name}</h3>
                         <p class="text-[#979797]">${number}</p>
                     </div>
                     <div>

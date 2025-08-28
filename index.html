@@ -8,23 +8,19 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>  
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!--typography-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 </head>
 <body class="bg-[#F4FEF6] min-h-screen pb-[60px]">
     <header class="bg-white">
         <!--nav bar-->
-        <nav class="flex justify-between max-w-[1400px] mx-auto py-[24px] md:mx-[40px]">
+        <nav class="md:flex justify-between max-w-[1400px] space-y-4 md:space-y-0 mx-auto px-5 py-10 md:py-5">
             <div class="flex items-center gap-2">
                 <img class="max-w-[50px]" src="assets/logo.png" alt="">
-                <h2 class="font-bold text-[#006747] leading-tight text-[22px]">Emergency <br> Service</h2>
+                <h2 class="font-bold text-[#006747] leading-tight text-4xl md:text-[22px]">Emergency <br class="hidden md:block"> Service</h2>
             </div>
 
 
-            <div class="flex items-center gap-[20px]">
+            <div class="flex items-center gap-2 md:gap-[20px] lg:flex-row">
                 <p class="inline-flex items-center space-x-2 py-[11px] px-[27px] bg-[#ECFDF0] rounded-4xl"><span id="heart-number" class="font-bold">0</span><img class="max-w-[27px]" src="assets/heart.png" alt=""></p>
 
                 <p class="inline-flex items-center space-x-2 py-[12px] px-[20px] bg-[#ECFDF0] rounded-4xl"><span id="coin" class="font-bold">100</span><img class="max-w-[24px]" src="assets/coin.png" alt=""></p>
@@ -34,10 +30,10 @@
         </nav>
 
         <!--banner title-->
-        <section class="flex flex-col justify-center items-center bg-gradient-to-r from-[#143525] via-[#2A6143] to-[#143525] text-white py-[20px]">
+        <section class="flex flex-col justify-center items-center bg-gradient-to-r from-[#143525] via-[#2A6143] to-[#143525] text-white py-[20px] px-5 md:px-0 text-center">
             <img class="max-w-[92px]" src="assets/logo-dark.png" alt="">
             <h3 class="font-bold text-[40px] my-[11px]">Emergency Service Directory</h3>
-            <p class="text-[18px] md:text-center sm:text-center">Government Emergency Services at Your Fingertip - A Project by  Government of the People's Republic of Bangladesh</p>
+            <p class="text-[18px]">Government Emergency Services at Your Fingertip - A Project by  Government of the People's Republic of Bangladesh</p>
         </section>
     </header>
 
@@ -47,7 +43,7 @@
 
             <section id="cards-container" class="lg:col-span-9 col-span-12 grid lg:grid-cols-3 grid-rows-3 gap-6">
                 <!--card 1-->
-                <div class="bg-white p-5 rounded-xl shadow-lg flex flex-col justify-between h-full">
+                <div class="bg-white p-5 rounded-xl shadow-sm flex flex-col justify-between h-full">
                     <!--icon-->
                     <div class="flex justify-between items-center">
                         <div class="bg-[#FAE3E2] p-3 rounded-2xl">
@@ -79,7 +75,7 @@
                 
 
                 <!--card 2-->
-                <div class="bg-white p-5 rounded-xl shadow-lg flex flex-col justify-between h-full">
+                <div class="bg-white p-5 rounded-xl shadow-sm flex flex-col justify-between h-full">
                     <!--icon-->
                     <div class="flex justify-between items-center">
                         <div class="bg-[#DFEFFD] p-3 rounded-2xl">
@@ -111,7 +107,7 @@
                 
 
                 <!--card 3-->
-                <div class="bg-white p-5 rounded-xl shadow-lg flex flex-col justify-between h-full">
+                <div class="bg-white p-5 rounded-xl shadow-sm flex flex-col justify-between h-full">
                     <!--icon-->
                     <div class="flex justify-between items-center">
                         <div class="bg-[#FAE3E2] p-3 rounded-2xl">
@@ -143,7 +139,7 @@
                 
 
                 <!--card 4-->
-                <div class="bg-white p-5 rounded-xl shadow-lg flex flex-col justify-between h-full">
+                <div class="bg-white p-5 rounded-xl shadow-sm flex flex-col justify-between h-full">
                     <!--icon-->
                     <div class="flex justify-between items-center">
                         <div class="bg-[#FAE3E2] p-3 rounded-2xl">
@@ -175,7 +171,7 @@
                 
 
                 <!--card 5-->
-                <div class="bg-white p-5 rounded-xl shadow-lg flex flex-col justify-between h-full">
+                <div class="bg-white p-5 rounded-xl shadow-sm flex flex-col justify-between h-full">
                     <!--icon-->
                     <div class="flex justify-between items-center">
                         <div class="bg-[#FAE3E2] p-3 rounded-2xl">
@@ -207,7 +203,7 @@
                 
 
                 <!--card 6-->
-                <div class="bg-white p-5 rounded-xl shadow-lg flex flex-col justify-between h-full">
+                <div class="bg-white p-5 rounded-xl shadow-sm flex flex-col justify-between h-full">
                     <!--icon-->
                     <div class="flex justify-between items-center">
                         <div class="bg-[#FAE3E2] p-3 rounded-2xl">
@@ -239,7 +235,7 @@
                 
 
                 <!--card 7-->
-                <div class="bg-white p-5 rounded-xl shadow-lg flex flex-col justify-between h-full">
+                <div class="bg-white p-5 rounded-xl shadow-sm flex flex-col justify-between h-full">
                     <!--icon-->
                     <div class="flex justify-between items-center">
                         <div class="bg-[#FAE3E2] p-3 rounded-2xl">
@@ -271,7 +267,7 @@
                 
 
                 <!--card 8-->
-                <div class="bg-white p-5 rounded-xl shadow-lg flex flex-col justify-between h-full">
+                <div class="bg-white p-5 rounded-xl shadow-sm flex flex-col justify-between h-full">
                     <!--icon-->
                     <div class="flex justify-between items-center">
                         <div class="bg-[#FAE3E2] p-3 rounded-2xl">
@@ -302,7 +298,7 @@
                 </div>
                 
                 <!--card 9-->
-                <div class="bg-white p-5 rounded-xl shadow-lg flex flex-col justify-between h-full">
+                <div class="bg-white p-5 rounded-xl shadow-sm flex flex-col justify-between h-full">
                     <!--icon-->
                     <div class="flex justify-between items-center">
                         <div class="bg-[#FAE3E2] p-3 rounded-2xl">
